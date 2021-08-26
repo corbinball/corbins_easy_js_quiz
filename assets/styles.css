@@ -1,0 +1,30 @@
+h1 {
+    font: 50px;
+    color: navy;
+    text-align: center;
+}
+
+.start-button {
+    color: red;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 25px 53px;
+    font-size: 24px;
+}
+
+h4 {
+    color: red;
+    text-align: center;
+}
+
+.questionBox, .anwserBox {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-style: double;
+    border-color: indigo;
+    justify-content: center;
+}
