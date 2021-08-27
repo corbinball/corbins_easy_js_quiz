@@ -13,6 +13,10 @@ h1 {
     font-size: 24px;
 }
 
+.start-button:hover{
+    background-color: palegreen;
+}
+
 h4 {
     color: red;
     text-align: center;
