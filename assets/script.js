@@ -1,4 +1,42 @@
-var questionGroup = "put questions one here";
+var questionGroup = [
+    { 
+        question: 'what is ....?',
+        answers: [
+            {text: 'correct', correct: true },
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+        ]
+    },
+    { 
+        question: 'what is ....?',
+        answers: [
+            {text: 'correct', correct: true },
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+        ]
+    },
+    { 
+        question: 'what is ....?',
+        answers: [
+            {text: 'correct', correct: true },
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+        ]
+    },
+    { 
+        question: 'what is ....?',
+        answers: [
+            {text: 'correct', correct: true },
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+            {text: 'incorrect', correct: false},
+        ]
+    },
+]
+
 
 var anwOne = "correct here";
 var wrongOne = ["wrongs here"];
@@ -33,7 +71,8 @@ function startQuiz() {
  1000,)
 };
 
-function questionUp() {
+function questionUp(questionGroup) {
+    
 
 }
 
