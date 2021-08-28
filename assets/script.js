@@ -1,55 +1,56 @@
 var questionGroup = [
     { 
-        question: 'what is ....?',
-        answers: [
-            {text: 'correct', correct: true },
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-        ]
+        question: 'what is Javascripts default behavior of moving declartaions to the top?',
+        answers: {
+            a: 'hoisting',
+            b: 'hosting',
+            c: 'hostess',
+            d: 'hooters'
+        },
+        correctAnswer: 'a'
     },
     { 
-        question: 'what is ....?',
-        answers: [
-            {text: 'correct', correct: true },
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-        ]
+        question: 'what is used to store multiple values in a single variable?',
+        answers: {
+            a: 'sting ray ',
+            b: 'manta ray',
+            c: 'arrays',
+            d: 'sunrays'
+        },
+        correctAnswer: 'c'
     },
     { 
-        question: 'what is ....?',
-        answers: [
-            {text: 'correct', correct: true },
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-        ]
+        question: 'what executes a block of code a number of times?',
+        answers: {
+            a: 'fruit loops',
+            b: 'hula hoops',
+            c: 'for loops',
+            d: 'loopty loops,'
+        },
+        correctAnswer: 'c'
     },
     { 
-        question: 'what is ....?',
-        answers: [
-            {text: 'correct', correct: true },
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-            {text: 'incorrect', correct: false},
-        ]
+        question: 'what is used for storing and manipulating text?',
+        answers: {
+            a: 'strings',
+            b: 'rope',
+            c: 'thread',
+            d: 'twine'
+        },
+        correctAnswer: 'a'
     },
-]
-
-
-var anwOne = "correct here";
-var wrongOne = ["wrongs here"];
-
+   
+];
 
 var scores = [];
 
 var timer = document.getElementById(".timer");
 var timeLeft = 120;
 
-var startBtn = document.getElementById("start-button");
+startBtn = document.getElementById("start-button");
 
-startBtn.addEventListener("click", startQuiz);
+questionEl = document.getElementById('question');
+answerEl = document.getElementById('anw-group');
 
 function startQuiz() {
     var timeLeft = 120;
@@ -57,10 +58,9 @@ function startQuiz() {
         timeLeft--;
         console.log(timeLeft);
             if (timeLeft >= 0) {
-                
-                questionUp()
-
                 document.getElementById("timer").innerHTML = timeLeft;
+
+                questionUp()
             }
             if (timeLeft === 0) {
                 alert("Game Over");
@@ -71,22 +71,22 @@ function startQuiz() {
  1000,)
 };
 
-function questionUp(questionGroup) {
-    
+function questionUp() {
+    var choice = [];
+
+    questionGroup
+
+
 
 }
 
-
-
 function correctAnw () {
-    //if (correctAnw.click)
-        //display(question)
+   
 }
 
 
 function wrongAnw () {
-    //if (wrongAnw.click)
-        //timeLeft - 5;
+  
 
 }
 
@@ -94,11 +94,9 @@ function score () {
 
 }
 
-function gameLost () {
-
-}
 
 function endQuiz () {
 
 }
 
+startBtn.addEventListener("click", startQuiz);
