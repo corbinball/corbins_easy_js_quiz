@@ -1,23 +1,8 @@
-var questOne = "put question one here";
-
-var questTwo = "put question two here";
-
-var questThree = "put question three here";
-
-var questFour = "put question four here";
+var questionGroup = "put questions one here";
 
 var anwOne = "correct here";
 var wrongOne = ["wrongs here"];
 
-var anwTwo = "correct here";
-//wrong answers here
-var wrongTwo = [];
-
-var anwThree = "correct here";
-var wrongThree = ["wrongs here"];
-
-var anwFour = "correct here";
-var wrongFour = ["wrongs here"];
 
 var scores = [];
 
@@ -26,6 +11,7 @@ var timeLeft = 120;
 
 var startBtn = document.getElementById("start-button");
 
+startBtn.addEventListener("click", startQuiz);
 
 function startQuiz() {
     var timeLeft = 120;
@@ -34,10 +20,8 @@ function startQuiz() {
         console.log(timeLeft);
             if (timeLeft >= 0) {
                 
-                //function questionOne();
-                //function questionTwo();
-                //function questionThree();
-                //function quesionFour();
+                questionUp()
+
                 document.getElementById("timer").innerHTML = timeLeft;
             }
             if (timeLeft === 0) {
@@ -49,21 +33,11 @@ function startQuiz() {
  1000,)
 };
 
-function questionOne() {
+function questionUp() {
 
 }
 
-function questionTwo () {
 
-}
-
-function questionThree () {
-
-}
-
-function quesionFour () {
-
-}
 
 function correctAnw () {
     //if (correctAnw.click)
@@ -89,4 +63,3 @@ function endQuiz () {
 
 }
 
-startBtn.addEventListener("click", startQuiz)
