@@ -42,20 +42,20 @@ h4 {
 }
 
 #anw-group button {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
+    background-color: #04AA6D;
+    border: 1px solid green; 
+    color: white;
+    padding: 10px 24px; 
+    cursor: pointer;
+    width: 50%; 
+    display: block; 
   }
   
   #anw-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+    border-bottom: none;
   }
   
-  /* Add a background color on hover */
+ 
   #anw-group button:hover {
     background-color: #3e8e41;
   }

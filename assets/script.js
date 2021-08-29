@@ -1,56 +1,55 @@
+//variable of questions and answers
 var questionGroup = [
     { 
         question: 'what is Javascripts default behavior of moving declartaions to the top?',
-        answers: {
-            a: 'hoisting',
-            b: 'hosting',
-            c: 'hostess',
-            d: 'hooters'
-        },
-        correctAnswer: 'a'
+        answers: [
+            {text: 'hoisting', correct: true },
+            {text: 'hosting', correct: false},
+            {text: 'hostess', correct: false},
+            {text: 'hooters', correct: false},
+        ],
     },
     { 
         question: 'what is used to store multiple values in a single variable?',
-        answers: {
-            a: 'sting ray ',
-            b: 'manta ray',
-            c: 'arrays',
-            d: 'sunrays'
-        },
-        correctAnswer: 'c'
+        answers: [
+            {text: 'sting ray ', correct: false},
+            {text: 'manta ray', correct: false},
+            {text: 'arrays', correct: true},
+            {text: 'sunrays', correct: false},
+        ],
     },
     { 
         question: 'what executes a block of code a number of times?',
-        answers: {
-            a: 'fruit loops',
-            b: 'hula hoops',
-            c: 'for loops',
-            d: 'loopty loops,'
-        },
-        correctAnswer: 'c'
+        answers: [
+            {text: 'fruit loops', correct: false},
+            {text: 'hula hoops', correct: false},
+            {text: 'for loops', correct: true},
+            {text: 'loopty loops', correct: false} 
+        ],
     },
     { 
         question: 'what is used for storing and manipulating text?',
-        answers: {
-            a: 'strings',
-            b: 'rope',
-            c: 'thread',
-            d: 'twine'
-        },
-        correctAnswer: 'a'
+        answers: [
+            {text: 'strings', correct: true},
+            {text: 'rope', correct: false},
+            {text: 'thread', correct: false},
+            {text: 'twine', correct: false},
+        ],
     },
-   
 ];
-
-var scores = [];
+var timeLeft = 120;
+var timerRun;
+var score = 0;
+var userChoice
 
 var timer = document.getElementById(".timer");
 var timeLeft = 120;
+var scoreContainer = document.getElementById("score");
+var userChoice = document.getElementById("anwBtn");
+var currentQuestion = document.getElementById("questionHere");
+var startBtn = document.getElementById("start-button");
 
-startBtn = document.getElementById("start-button");
 
-questionEl = document.getElementById('question');
-answerEl = document.getElementById('anw-group');
 
 function startQuiz() {
     var timeLeft = 120;
@@ -59,8 +58,8 @@ function startQuiz() {
         console.log(timeLeft);
             if (timeLeft >= 0) {
                 document.getElementById("timer").innerHTML = timeLeft;
+                questionUp;
 
-                questionUp()
             }
             if (timeLeft === 0) {
                 alert("Game Over");
@@ -72,23 +71,16 @@ function startQuiz() {
 };
 
 function questionUp() {
-    var choice = [];
-
-    questionGroup
-
-
-
+    for(var i=0; i < question.length; i++){
+        var choice = userChoice(question[i].answers)
+        if (choice == question[i].correctAnswer){
+            timeLeft + 5;
+        } else {
+            timeLeft - 5;
+        }
+    }
 }
 
-function correctAnw () {
-   
-}
-
-
-function wrongAnw () {
-  
-
-}
 
 function score () {
 
