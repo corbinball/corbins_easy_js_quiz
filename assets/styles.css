@@ -41,13 +41,13 @@ h4 {
     justify-content: center;
 }
 
-#anw-group button {
+.btn-grid .btn {
     background-color: #04AA6D;
     border: 1px solid green; 
     color: white;
     padding: 10px 24px; 
     cursor: pointer;
-    width: 50%; 
+    width: auto; 
     display: block; 
   }
   

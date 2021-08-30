@@ -37,7 +37,7 @@ var questionGroup = [
         ],
     },
 ];
-var timeLeft = 120;
+var timeLeft = 20;
 var timerRun;
 var score = 0;
 var userChoice
@@ -52,7 +52,7 @@ var startBtn = document.getElementById("start-button");
 
 
 function startQuiz() {
-    var timeLeft = 120;
+    var timeLeft = 20;
     setInterval(function() {
         timeLeft--;
         console.log(timeLeft);
@@ -62,7 +62,6 @@ function startQuiz() {
 
             }
             if (timeLeft === 0) {
-                alert("Game Over");
                 clearInterval(timeLeft);
             }
                 //function gameLost();
