@@ -37,23 +37,25 @@ var questionGroup = [
         ],
     },
 ];
-var timeLeft = 20;
 var timerRun;
 var score = 0;
-var userChoice
+var userChoice;
+var theChoice;
 
 var timer = document.getElementById(".timer");
-var timeLeft = 120;
+var timeLeft = 50;
 var scoreContainer = document.getElementById("score");
-var userChoice = document.getElementById("anwBtn");
+var anwOptions = document.getElementById("answer-buttons");
+var anwHere = document.getElementById("btn")
 var currentQuestion = document.getElementById("questionHere");
 var startBtn = document.getElementById("start-button");
+var scoreTime = document.getElementById("scoreBox");
+var finalScore = document.getElementById("score");
 
 
 
-function startQuiz() {
-    var timeLeft = 20;
-    setInterval(function() {
+function startTimer() {
+    timer = setInterval(function() {
         timeLeft--;
         console.log(timeLeft);
             if (timeLeft >= 0) {
@@ -62,22 +64,16 @@ function startQuiz() {
 
             }
             if (timeLeft === 0) {
-                clearInterval(timeLeft);
+                clearInterval(timer);
             }
-                //function gameLost();
     },
  1000,)
 };
 
-function questionUp() {
-    for(var i=0; i < question.length; i++){
-        var choice = userChoice(question[i].answers)
-        if (choice == question[i].correctAnswer){
-            timeLeft + 5;
-        } else {
-            timeLeft - 5;
-        }
-    }
+function questionUp(questionGroup) {
+    
+   
+    
 }
 
 
@@ -90,4 +86,4 @@ function endQuiz () {
 
 }
 
-startBtn.addEventListener("click", startQuiz);
+startBtn.addEventListener("click", startTimer);
