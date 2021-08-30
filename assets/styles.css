@@ -51,11 +51,11 @@ h4 {
     display: block; 
   }
   
-  #anw-group button:not(:last-child) {
+  .btn-grid button:not(:last-child) {
     border-bottom: none;
   }
   
  
-  #anw-group button:hover {
+  .btn-grid button:hover {
     background-color: #3e8e41;
   }
