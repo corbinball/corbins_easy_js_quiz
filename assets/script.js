@@ -52,7 +52,10 @@ var startBtn = document.getElementById("start-button");
 var scoreTime = document.getElementById("scoreBox");
 var finalScore = document.getElementById("score");
 
-
+function startQuiz () {
+    startTimer;
+    questionUp;
+}
 
 function startTimer() {
     timer = setInterval(function() {
@@ -70,8 +73,11 @@ function startTimer() {
  1000,)
 };
 
-function questionUp(questionGroup) {
-    
+function questionUp() {
+    document.getElementById("questionHere").innterHTML = question;
+    document.getElementById("answer-buttons").innerHTML = answers;
+    document.getElementById("btn").innerHTML = text;
+
    
     
 }
